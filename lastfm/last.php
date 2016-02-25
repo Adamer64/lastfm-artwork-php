@@ -18,7 +18,7 @@ class LastFM {
         $xml = new SimpleXMLElement($xml);
         $xml = $xml->album;
         $xml = $xml->image[$size];
-		return (!$return_image) ? $xml : $xml;
+		return $xml;
 	
 	
 	}
